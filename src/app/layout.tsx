@@ -4,6 +4,11 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Saheed Ibikunle — Full Stack Developer",
   description: "Full Stack Developer with 6+ years building payment infrastructure, enterprise SaaS, and modern web applications.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

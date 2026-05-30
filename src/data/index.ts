@@ -43,9 +43,9 @@ export const TECH = [
 
 export const STATS: Stat[] = [
   { number: "6+", label: "Years experience" },
-  { number: "3", label: "Financial institutions" },
+  { number: "3", label: "Companies worked with" },
   { number: "1k+", label: "Corporate clients served" },
-  { number: "3", label: "Products shipped" },
+  { number: "10+", label: "Products shipped" },
 ];
 
 export const JOBS: Job[] = [
