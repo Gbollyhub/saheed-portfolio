@@ -1,7 +1,14 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)"
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --no-git)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(open http://localhost:3000)",
+      "Bash(ls /Users/yomi/Desktop/Yomi/website/../../../.claude/projects/ 2>/dev/null | head -5 || echo \"checking memory path\" *)",
+      "Read(//Users/yomi/.claude/projects/**)"
     ]
   }
 }
