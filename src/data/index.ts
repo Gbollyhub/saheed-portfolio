@@ -36,7 +36,7 @@ export const NAV_LINKS = ["Work", "Experience", "About", "Contact"] as const;
 
 /** Replace YOUR_FILE_ID with the Google Drive file ID from your shareable link. */
 export const RESUME_URL =
-  "https://drive.google.com/uc?export=download&id=11JVFXdrGEXrsP8-CfuK2OoYzAv1mHPNq";
+  "https://drive.google.com/uc?export=download&id=1vhhCnDi4_b-DL-8CLn712z9TBHX9LWh9";
 
 export const TECH = [
   "React.js", "Next.js", "TypeScript", "Node.js", "PostgreSQL",
