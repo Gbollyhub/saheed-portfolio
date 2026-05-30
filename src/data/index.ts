@@ -34,6 +34,10 @@ export type SkillRowData = {
 
 export const NAV_LINKS = ["Work", "Experience", "About", "Contact"] as const;
 
+/** Replace YOUR_FILE_ID with the Google Drive file ID from your shareable link. */
+export const RESUME_URL =
+  "https://drive.google.com/uc?export=download&id=11JVFXdrGEXrsP8-CfuK2OoYzAv1mHPNq";
+
 export const TECH = [
   "React.js", "Next.js", "TypeScript", "Node.js", "PostgreSQL",
   "GraphQL", "AWS", "Docker", "Flutter", "React Native",

@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { revealWords, fadeUp } from "@/lib/animations";
 import SectionLabel from "@/components/ui/SectionLabel";
+import { RESUME_URL } from "@/data";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -139,6 +140,40 @@ export default function Contact() {
           {LINKS.map((l) => (
             <ContactRow key={l.label} {...l} />
           ))}
+          {/* Resume download row */}
+          <a
+            href={RESUME_URL}
+            download
+            className="contact-link"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              borderTop: "1px solid #1d1d1d",
+              padding: "36px 0",
+              textDecoration: "none",
+              opacity: 0,
+              flexWrap: "wrap",
+              gap: 12,
+              transition: "padding 0.35s ease",
+            }}
+            onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.paddingLeft = "16px"; }}
+            onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.paddingLeft = "0px"; }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 32, flexWrap: "wrap" }}>
+              <span style={{ fontSize: 10, letterSpacing: "0.22em", textTransform: "uppercase", color: "#333", width: 56, flexShrink: 0 }}>
+                Resume
+              </span>
+              <span style={{ fontSize: "clamp(15px, 2vw, 22px)", color: "#F5F5F5", fontWeight: 500 }}>
+                Saheed_Ibikunle_Resume.pdf
+              </span>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: 16 }}>
+              <span style={{ fontSize: 13, color: "#444" }}>Download CV</span>
+              <span style={{ fontSize: 18, color: "#222" }}>↓</span>
+            </div>
+          </a>
+
           <div style={{ height: 1, background: "#1d1d1d" }} />
         </div>
       </div>

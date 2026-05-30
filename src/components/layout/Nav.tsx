@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
-import { NAV_LINKS } from "@/data";
+import { NAV_LINKS, RESUME_URL } from "@/data";
 
 function scrollTo(id: string) {
   document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
@@ -88,9 +88,10 @@ export default function Nav() {
             ))}
           </div>
 
-          {/* Email — desktop */}
+          {/* Download Resume — desktop */}
           <a
-            href="mailto:aliasgbolly@gmail.com"
+            href={RESUME_URL}
+            download
             className="hide-mobile"
             style={{
               marginLeft: "auto",
@@ -100,11 +101,20 @@ export default function Nav() {
               transition: "color 0.2s",
               zIndex: 1,
               fontFamily: "'Exo 2', sans-serif",
+              border: "1px solid #2a2a2a",
+              padding: "6px 14px",
+              letterSpacing: "0.04em",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = "#F5F5F5")}
-            onMouseLeave={(e) => (e.currentTarget.style.color = "#666")}
+            onMouseEnter={(e) => {
+              (e.currentTarget as HTMLElement).style.color = "#F5F5F5";
+              (e.currentTarget as HTMLElement).style.borderColor = "#F5F5F5";
+            }}
+            onMouseLeave={(e) => {
+              (e.currentTarget as HTMLElement).style.color = "#666";
+              (e.currentTarget as HTMLElement).style.borderColor = "#2a2a2a";
+            }}
           >
-            aliasgbolly@gmail.com
+            Download Resume ↓
           </a>
 
           {/* Hamburger — mobile */}
