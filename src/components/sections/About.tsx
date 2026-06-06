@@ -10,7 +10,7 @@ import SectionLabel from "@/components/ui/SectionLabel";
 gsap.registerPlugin(ScrollTrigger);
 
 const STORY = [
-  "Full Stack Developer with 6+ years specialising in fintech and enterprise SaaS. I've built and shipped corporate card systems, payment gateways, and cross-border payment infrastructure used by thousands of users across the UK and Africa.",
+  "Full Stack Developer with 6+ years specialising in fintech and enterprise SaaS, with a background in UX/UI design. I've built and shipped corporate card systems, payment gateways, and cross-border payment infrastructure used by thousands of users across the UK and Africa.",
   "I build independently end to end, from API architecture and database design through to polished, production-ready frontends. Core stack: React, Next.js, Node.js, Python, TypeScript, GraphQL, PostgreSQL, AWS.",
   "Comfortable leading platform rewrites, owning complex data migrations, and making architectural decisions that improve scalability and delivery speed across distributed teams.",
 ];
